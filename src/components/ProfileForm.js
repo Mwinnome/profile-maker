@@ -30,22 +30,24 @@ const handleForm =(e)=>{
 
     <label> 
     First Name
-    <input name='firstname' type="text" onChange={handler}/>
+    <input name='firstname' value={profile.firstname}onChange={handler}  type="text" />
     </label>
     
     <label> 
     Last Name
-    <input name='lastname' type="text" onChange={handler}/>
+    <input name='lastname' value={profile.lastname} onChange={handler} type="text"/>
     </label>
+    </div>
 
+     <div className='names'>
     <label> 
     Email
-    <input name='email' type="email" onChange={handler}/>
+    <input name='email' value={profile.email} onChange={handler} type="email"/>
     </label>
 
     <label> 
     Phone
-    <input name='phone' type="tel" onChange={handler}/>
+    <input name='phone' value={profile.phone} onChange={handler} type="tel"/>
     </label>
 
     </div>
